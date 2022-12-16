@@ -21,8 +21,6 @@ def callback(data):
             print(tag_name)
             (trans, rot) = listener.lookupTransform(tag_name, '/map', rospy.Time(0))
             
-            # r = R.as_matrix(rot)
-            # r.as_quat()
             dict_apriltag[id] = (trans, rot)
         print(dict_apriltag)
     with open('convert.txt', 'w') as convert_file:
