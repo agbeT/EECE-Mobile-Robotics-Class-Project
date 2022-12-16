@@ -1,7 +1,7 @@
 # EECE-Mobile-Robotics-Class-Project
 ## On both turtlebot and remote PC.
-1. Clone repository into catkin_ws/src.
-2. Go to catkin_ws and catkin_make.
+1. Clone repository into ```catkin_ws/src```.
+2. Go to ```catkin_ws``` and ```catkin_make```.
 
 ## On remote PC
 1. SSH into turtlebot and run ```roslaunch turtlebot3_explore bebop.launch```
