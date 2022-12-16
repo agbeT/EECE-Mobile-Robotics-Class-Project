@@ -4,6 +4,7 @@
 2. Go to ```catkin_ws``` and ```catkin_make```.
 
 ## On remote PC
-1. SSH into turtlebot and run ```roslaunch turtlebot3_explore bebop.launch```
-2. Open new terminal tab and run ```roslaunch turtlebot3_explore turtlebot3_auto_explore```
-3. In new terminal tab, ```rosrun turtlebot3_explore april_detections.py```
+1. Run ```roscore```  
+2. SSH into turtlebot and run ```roslaunch turtlebot3_explore bebop.launch```. This handles the turtlebot bringup and enables the camera.
+3. Open new terminal tab and run ```roslaunch turtlebot3_explore turtlebot3_auto_explore```. This runs the launch files for ```gmapping, move_base, explore_lite, apriltag_ros```
+4. In new terminal tab, ```rosrun turtlebot3_explore april_detections.py```
